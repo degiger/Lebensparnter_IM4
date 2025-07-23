@@ -1,4 +1,6 @@
-/* Base styles */
+/* ==========================================================================
+   🧱 Basis-Stile
+   ========================================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,9 @@ body {
   line-height: 1.5;
 }
 
-/* Container */
+/* ==========================================================================
+   📦 Container & Layout
+   ========================================================================== */
 .login-container {
   display: flex;
   flex-direction: column;
@@ -23,7 +27,9 @@ body {
   min-height: 100vh;
 }
 
-/* Zentrierter Header */
+/* ==========================================================================
+   🧭 Header
+   ========================================================================== */
 .header-wrapper {
   position: relative;
   width: 100%;
@@ -64,7 +70,9 @@ body {
   right: 0;
 }
 
-/* Title */
+/* ==========================================================================
+   🏷️ Titel
+   ========================================================================== */
 .login-title {
   font-size: 28px;
   font-weight: 700;
@@ -72,7 +80,9 @@ body {
   margin-bottom: 30px;
 }
 
-/* Button container */
+/* ==========================================================================
+   📋 Formularstruktur
+   ========================================================================== */
 .login-form {
   display: flex;
   flex-direction: column;
@@ -81,22 +91,32 @@ body {
   width: 100%;
 }
 
-/* Main buttons */
-.login-button {
-  display: block;
+/* ==========================================================================
+   🔘 Buttons – Gemeinsame Eigenschaften
+   ========================================================================== */
+.login-button,
+.emergency-button,
+.logout-button {
   width: 100%;
   max-width: 900px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* ==========================================================================
+   🔵 Login Button
+   ========================================================================== */
+.login-button {
+  display: block;
   padding: 28px 40px;
   border-radius: 40px;
   background-color: #31f;
   color: #fff;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
   text-decoration: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -110,7 +130,9 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* Emergency Button Wrapper */
+/* ==========================================================================
+   🔴 Emergency Button
+   ========================================================================== */
 .button-wrapper {
   width: 100%;
   display: flex;
@@ -118,20 +140,12 @@ body {
   margin-top: 60px;
 }
 
-/* Emergency button (rot – bleibt bestehen) */
 .emergency-button {
-  width: 100%;
-  max-width: 900px;
   padding: 22px 30px;
   border-radius: 30px;
   background-color: #f00;
   color: #fff;
-  font-size: 32px;
-  font-weight: 700;
   border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-align: center;
 }
 
 .emergency-button:hover {
@@ -144,21 +158,16 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* Logout button (schwarzer Button, wie "Zur Startseite") */
+/* ==========================================================================
+   ⚫ Logout Button
+   ========================================================================== */
 .logout-button {
-  width: 100%;
-  max-width: 900px;
   padding: 22px 30px;
   border-radius: 50px;
   background-color: #000;
   color: #fff;
-  font-size: 32px;
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
   border: none;
-  cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .logout-button:hover {
@@ -171,7 +180,9 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* Ergänzungen für Formularseite */
+/* ==========================================================================
+   📝 Formularfelder / Texteingabe
+   ========================================================================== */
 .textarea-box {
   width: 100%;
   max-width: 900px;
@@ -192,7 +203,9 @@ body {
   max-width: 600px;
 }
 
-/* Responsive styles */
+/* ==========================================================================
+   📱 Responsive Styles
+   ========================================================================== */
 @media (max-width: 991px) {
   .login-title {
     font-size: 24px;
@@ -209,10 +222,7 @@ body {
     font-size: 20px;
   }
 
-  .textarea-box {
-    font-size: 18px;
-  }
-
+  .textarea-box,
   .info-text {
     font-size: 18px;
   }
